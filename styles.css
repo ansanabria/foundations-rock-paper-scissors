@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Glass Antiqua", cursive;
+}
+
+:root {
+  --primary-red: #ff8080;
+  --secondary-pink: #ffebd8;
+  --tertiary-blue: #89b9ad;
+  --tertiary-green: #c7dca7;
+  --wrong-red: #ff000099;
+  --correct-green: #52ff00b2;
+}
+
+body {
+  background-color: var(--secondary-pink);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: var(--primary-red);
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.banner > h2 {
+  font-size: 2rem;
+}
+
+.banner > p {
+  font-size: 1.5rem;
+}
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.card-row {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.card-score-row {
+  display: flex;
+  column-gap: 4rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.player .card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.rock {
+  background-color: var(--primary-red);
+}
+
+.paper {
+  background-color: var(--tertiary-blue);
+}
+
+.scissors {
+  background-color: var(--tertiary-green);
+}
+
+.score-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+}
+
+.text-gamer {
+  font-size: 2rem;
+}
+
+.score-number {
+  font-size: 2.5rem;
+}
+
+.computer button {
+  opacity: 0.5;
+}
+
+.dialog {
+  margin: auto;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.dialog-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dialog-subheader {
+  font-size: 1.5rem;
+}
+
+.dialog button {
+  font-size: 1.5rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: none;
+  background-color: var(--primary-red);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+.dialog button:hover {
+  opacity: 0.7;
+}

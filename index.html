@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <div class="banner">
+      <h2>Let the battle begin!</h2>
+      <p>The first to achieve 5 points wins</p>
+    </div>
+    <div class="playground">
+      <div class="card-score-row player">
+        <div class="card-row">
+          <button id="rock" class="card rock">
+            <img src="public/images/rock-icon.svg" alt="Rock Icon" />
+          </button>
+          <button id="paper" class="card paper">
+            <img src="public/images/paper-icon.svg" alt="Paper Icon" />
+          </button>
+          <button id="scissors" class="card scissors">
+            <img src="public/images/scissors-icon.svg" alt="Scissors Icon" />
+          </button>
+        </div>
+        <div>
+          <div class="text-gamer">Player</div>
+          <div class="score-number">0</div>
+        </div>
+      </div>
+      <div class="card-score-row computer">
+        <div class="card-row">
+          <button disabled class="card rock">
+            <img src="public/images/rock-icon.svg" alt="Rock Icon" />
+          </button>
+          <button disabled class="card paper">
+            <img src="public/images/paper-icon.svg" alt="Paper Icon" />
+          </button>
+          <button disabled class="card scissors">
+            <img src="public/images/scissors-icon.svg" alt="Scissors Icon" />
+          </button>
+        </div>
+        <div>
+          <div class="text-gamer">Computer</div>
+          <div class="score-number">0</div>
+        </div>
+      </div>
+    </div>
+    <dialog class="dialog">
+      <div class="dialog-wrapper">
+        <div class="dialog-header"><span class="winner-tag"></span> wins!</div>
+        <div class="dialog-subheader">Do you want to play again?</div>
+        <button autofocus>Play again</button>
+      </div>
+    </dialog>
   </body>
   <script src="index.js"></script>
 </html>
